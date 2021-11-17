@@ -1,0 +1,223 @@
+@media (max-width: 769px){
+  .header-logo a{
+    font-size: 2rem;
+  }
+
+  .header{
+    margin: 2rem;
+  }
+
+  .nav-list{
+    display: none;
+  }
+
+  .gallery{
+    margin: 1rem 2rem;
+    grid-gap: 0.5rem;
+  }
+.overlay{
+font-size: 1.5rem;
+}
+
+.about-1{
+display: flex;
+flex-direction: column;
+margin: 2rem;
+}
+
+
+.text{
+  padding: 2rem;
+}
+
+.text h2{
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.text p{
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.about-2{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  }
+
+  .about-3{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    }
+
+    .cllection-top h2{
+      font-size: 3.5rem;
+    }
+
+    .cllection-top input{
+      width: 50%;
+      height: 45px;
+      margin: 0.5rem 0;
+    }
+
+    .cllection-top a{
+      font-size: 1.2rem;
+      padding: 0.5rem;
+    }
+
+    .topic h2{
+      font-size: 2rem;
+    }
+
+    .ring{
+      grid-gap: 0.5rem;
+      margin: 5rem 2rem;
+    }
+
+    .ring-overlay{
+      font-size: 2rem;
+    }
+
+    .necklace{
+      grid-gap: 0.5rem;
+      margin: 5rem 2rem;
+    }
+
+    .necklace-overlay{
+      font-size: 2rem;
+    }
+
+    .earing{
+      grid-gap: 0.5rem;
+      margin: 5rem 2rem;
+    }
+
+    .earing-overlay{
+      font-size: 2rem;
+    }
+
+    .designer-top{
+      font-size: 2rem;
+      margin-top:2rem;
+    }
+
+    .slide{
+      margin-top: 2rem;
+    }
+
+    .slide-item img{
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      }
+
+      .content{
+        text-align: center;
+        margin: 2rem;
+      }
+
+      .content h2{
+        font-size: 2rem;
+        padding: 1rem;
+      }
+
+      .content p{
+        font-size: 1.2rem;
+        text-align: left;
+        padding: 1rem;
+      }
+
+      .slide-item p{
+        padding: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .news-top{
+        font-size: 2rem;
+        margin-top:3rem;
+      }
+      .article{
+        margin: 1rem;
+      }
+
+      .article-item{
+        width: 40%;
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+
+      .article-item h2{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      .article-item p{
+        padding: 0.2rem 1rem;
+        font-size: 1.1rem;
+      }
+
+      .btn:hover{
+        opacity: 1;
+      }
+
+      .contact-top{
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+      .contact-form{
+        margin-top: 2rem;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .contact-list{
+        margin: 3rem;
+      }
+
+      label{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+
+      input{
+        
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+      border-bottom: 1px solid #333;
+      }
+
+      .contact-content{
+        margin: 2rem;
+      }
+
+      textarea{
+        width: 100%;
+        height: 100%;
+      }
+
+      .store-top{
+        font-size: 2rem;
+        margin-top:2rem;
+        }
+      
+        .store-list{
+          margin: 5rem;
+        }
+
+        .store-list-top{
+          font-size: 1.2rem;
+        }
+
+        .store-item{
+          font-size: 1.2rem;
+          margin: 1rem;
+        }
+        .store-item h3{
+          padding-right: 2rem;
+        }
+      
+
+  
+}

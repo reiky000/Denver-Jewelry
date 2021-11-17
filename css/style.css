@@ -1,0 +1,958 @@
+
+html{
+  font-size: 62.5%
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+ 
+  background-color: #f7f4ed;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  z-index: 100;
+}
+
+.header-logo{
+  margin: 2rem 5rem;
+}
+
+.header-logo a{
+  color: rgb(53, 53, 53);
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+.nav-list a{
+  color: rgb(53, 53, 53);
+  border-bottom: 5px solid transparent;
+  transition: border 1s ease-out;
+}
+
+.nav-list a:hover{
+  border-bottom: 5px solid #333;
+}
+
+.nav-list ul li{
+list-style: none;
+}
+
+.nav-list{
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 2rem 5rem;
+}
+
+.nav-items{
+  display: flex;
+}
+
+.nav-items li{
+  margin-left: 4rem;
+}
+
+
+
+.sns{
+  margin: 0 1rem 0 0;
+  position: fixed;
+  background-color:rgb(29, 29, 29);
+  width: 3.5rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ z-index: 100;
+}
+
+.sns a{
+  color: #f7f4ed;
+  font-size: 2rem;
+ 
+}
+
+.twitter{
+  padding-top: 1.5rem;
+}
+
+.sns i{
+  padding-bottom: 1.5rem;
+  padding-left: 0.3rem;
+}
+
+
+
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 20rem );
+  grid-gap: 1rem;
+  margin: 1.5rem 5rem;
+}
+
+
+.gallery-item-1{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.gallery-item-2{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.gallery-item-3{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.gallery-item-4{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 3;
+}
+
+.gallery-item-5{
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+.gallery-item-6{
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.gallery-link{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ 
+ background-color: rgba(0, 0, 0, 0.5);
+
+ font-size: 4rem;
+  color: seashell;
+  font-weight: 700;
+  font-family: 'Zen Kurenaido', sans-serif;
+  
+
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.gallery-link:hover .overlay{
+  opacity: 1;
+}
+
+.overlay span{
+  position: relative;
+padding: 0.7rem;
+}
+
+.overlay span:before,
+.overlay span:after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: seashell;
+  transition: width .3s ease-in .2s;
+}
+
+.overlay span:before{
+  top: 0;
+  left: 0px;
+}
+
+.overlay span:after{
+  bottom: 0;
+  right: 0;
+}
+
+.gallery-link:hover .overlay span:before,
+.gallery-link:hover .overlay span:after{
+  width: 100%;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+
+.gallery-link:hover img{
+transform: scale(1.2);
+filter: blur(1px);
+}
+
+footer{
+  text-align: center;
+  margin: 1rem;
+}
+
+.footer p{
+  font-size: 1.2rem;
+}
+
+
+
+/* アバウトページ */
+.about-img{
+  width: 100%;
+  height:70vh;
+  background-image: url(../image/7.jpg);
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.text{
+  text-align: center;
+  padding: 5rem;
+}
+
+.text h2{
+font-size: 3rem;
+font-weight: 400;
+padding: 3rem;
+}
+
+.text p{
+  font-size: 1.8rem;
+  font-weight: 300;
+  padding: 3rem;
+  line-height: 3rem;
+}
+
+
+
+.item-1 img{
+  width: 100%;
+  height: 80%;
+  padding: 5rem;
+}
+
+.about-1{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 5rem;
+}
+
+.about-2{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 5rem;
+}
+
+.about-3{
+  display: flex;
+  justify-content: center;
+  margin: 1rem 5rem;
+}
+
+
+/* collection */
+.cllection-top{
+  width: 100%;
+  height: 70vh;
+  background-image: url(../image/12.jpg);
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+
+.cllection-top h2{
+  color: seashell;
+  font-size: 6rem;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  border-top: 2px solid seashell;
+  border-bottom: 2px solid seashell;
+}
+
+
+
+.cllection-top input{
+width: 55%;
+height: 45px;
+border-radius: 30px;
+border: none;
+padding:0 3rem;
+outline: none;
+margin: 2rem 0;
+font-size: 1.6rem;
+position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: seashell;
+}
+
+.cllection-top p{
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+}
+
+.cllection-top a{
+  font-size: 1.5rem;
+  color: seashell;
+  padding: 3rem;
+}
+
+.topic h2{
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: rgb(29, 29, 29);
+}
+
+/* ring ggallery */
+.ring{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 35rem );
+  grid-gap: 2rem;
+  margin: 15rem 5rem;
+}
+
+
+.ring-item-1{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.ring-item-2{
+  grid-column: 2/ span 1;
+  grid-row: 1 / span 1;
+}
+
+.ring-item-3{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.ring-item-4{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.ring-item-5{
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+
+
+.ring-link{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.ring-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ 
+ background-color: rgba(0, 0, 0, 0.5);
+
+ font-size: 4rem;
+  color: seashell;
+  font-weight: 700;
+  font-family: 'Zen Kurenaido', sans-serif;
+  
+
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.ring-link:hover .ring-overlay{
+  opacity: 1;
+}
+
+.ring-overlay span{
+  position: relative;
+padding: 0.7rem;
+}
+
+.ring-overlay span:before,
+.ring-overlay span:after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: seashell;
+  transition: width .3s ease-in .2s;
+}
+
+.ring-overlay span:before{
+  top: 0;
+  left: 0px;
+}
+
+.ring-overlay span:after{
+  bottom: 0;
+  right: 0;
+}
+
+.ring-link:hover .ring-overlay span:before,
+.ring-link:hover .ring-overlay span:after{
+  width: 100%;
+}
+
+.ring-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+
+.ring-link:hover img{
+transform: scale(1.2);
+filter: blur(1px);
+}
+
+/* necklace */
+.necklace{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 35rem );
+  grid-gap: 2rem;
+  margin: 15rem 5rem;
+}
+
+
+.necklace-item-1{
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.necklace-item-2{
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.necklace-item-3{
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.necklace-item-4{
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.necklace-item-5{
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+
+
+.necklace-link{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.necklace-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ 
+ background-color: rgba(0, 0, 0, 0.5);
+
+ font-size: 4rem;
+  color: seashell;
+  font-weight: 700;
+  font-family: 'Zen Kurenaido', sans-serif;
+  
+
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.necklace-link:hover .necklace-overlay{
+  opacity: 1;
+}
+
+.necklace-overlay span{
+  position: relative;
+padding: 0.7rem;
+}
+
+.necklace-overlay span:before,
+.necklace-overlay span:after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: seashell;
+  transition: width .3s ease-in .2s;
+}
+
+.necklace-overlay span:before{
+  top: 0;
+  left: 0px;
+}
+
+.necklace-overlay span:after{
+  bottom: 0;
+  right: 0;
+}
+
+.necklace-link:hover .necklace-overlay span:before,
+.necklace-link:hover .necklace-overlay span:after{
+  width: 100%;
+}
+
+.necklace-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+
+.necklace-link:hover img{
+transform: scale(1.2);
+filter: blur(1px);
+}
+
+/* earing */
+.earing{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 35rem );
+  grid-gap: 2rem;
+  margin: 15rem 5rem;
+}
+
+
+.earing-item-1{
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+
+.earing-item-2{
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.earing-item-3{
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.earing-item-4{
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 1;
+}
+
+.earing-item-5{
+  grid-column: 4 / span 1;
+  grid-row: 2 / span 1;
+}
+
+
+
+.earing-link{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.earing-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ 
+ background-color: rgba(0, 0, 0, 0.5);
+
+ font-size: 4rem;
+  color: seashell;
+  font-weight: 700;
+  font-family: 'Zen Kurenaido', sans-serif;
+  
+
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.earing-link:hover .earing-overlay{
+  opacity: 1;
+}
+
+.earing-overlay span{
+  position: relative;
+padding: 0.7rem;
+}
+
+.earing-overlay span:before,
+.earing-overlay span:after{
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: seashell;
+  transition: width .3s ease-in .2s;
+}
+
+.earing-overlay span:before{
+  top: 0;
+  left: 0px;
+}
+
+.earing-overlay span:after{
+  bottom: 0;
+  right: 0;
+}
+
+.earing-link:hover .earing-overlay span:before,
+.earing-link:hover .earing-overlay span:after{
+  width: 100%;
+}
+
+.earing-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+
+.earing-link:hover img{
+transform: scale(1.2);
+filter: blur(1px);
+}
+
+
+
+/* designer */
+
+
+.designer-top{
+font-size: 3.5rem;
+text-align: center;
+color: rgb(29, 29, 29);
+margin-top:8rem;
+
+}
+
+.designer-top h2{
+  font-weight: normal;
+  font-family: 'Dancing Script', cursive;
+}
+
+.slide{
+margin-top: 5rem;
+}
+
+.slide-item img{
+width: 100%;
+height: 100%;
+padding: 3rem;
+}
+
+.slick-prev .slick-next{
+width: 60px;
+height: 50px;
+}
+
+.slick-prev{
+ left: 3%;
+ z-index: 1;
+}
+
+.slick-next{
+  right: 4%;
+}
+
+.slick-prev:before,
+.slick-next:before{
+  font-size: 5rem;
+  color: #333;
+}
+
+.slide-item p{
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+}
+
+.content{
+  text-align: center;
+  margin: 5rem;
+}
+
+.content h2{
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.content p{
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 2rem;
+}
+
+/* news */
+.news-top{
+  font-size: 3.5rem;
+  text-align: center;
+  color: rgb(29, 29, 29);
+  margin-top:5rem;
+  }
+
+  .news-top h2{
+    font-weight: normal;
+    font-family: 'Dancing Script', cursive;
+  }
+
+
+.article{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.article-item{
+width: 30%;
+margin: 2rem;
+background-color: #FFF;
+padding: 2.5rem;
+}
+
+.article-item h2{
+ padding: 1rem;
+ font-size: 1.5rem;
+}
+
+.article-item p{
+  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
+}
+
+.article-item .btn{
+  display: inline-block;
+  margin: 1rem 1rem 0 1rem;
+  padding: 1rem 2rem;
+  border:  2px slid #333;
+  background-color: silver;
+}
+
+.btn a{
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.btn:hover{
+  opacity: 0.5;
+}
+
+
+/* contact */
+.contact-top{
+  font-size: 3.5rem;
+  text-align: center;
+  color: rgb(29, 29, 29);
+  margin-top:5rem;
+  }
+
+  .contact-top h2{
+    font-weight: normal;
+    font-family: 'Dancing Script', cursive;
+  }
+  .contact-top p{
+    font-size: 1.2rem;
+    padding-top: 2rem;
+  }
+
+.contact-form{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.contact-list{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 5rem;
+}
+
+label{
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+input{
+  border: none;
+  background-color: #f7f4ed;
+  margin-bottom: 2rem;
+  padding: 3rem;
+border-bottom: 1px solid #333;
+}
+
+select{
+  border: none;
+  background-color: #f7f4ed;
+  margin-bottom: 2rem;
+}
+
+#category{
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #333;
+}
+
+
+.contact-content{
+width: 40%;
+margin: 5rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+textarea{
+  width: 80%;
+  height: 80%;
+  border: none;
+  background-color: #f7f4ed;
+  padding-top: 5rem;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.submit{
+  border: 2px solid #333;
+  display: inline-block;
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.submit:hover:focus{
+  color: #f7f4ed;
+  background-color: #333;
+}
+
+
+/* store */
+
+.store-top{
+  font-size: 3.5rem;
+  text-align: center;
+  color: rgb(29, 29, 29);
+  margin-top:5rem;
+  }
+
+  .store-top h2{
+    font-weight: normal;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .store-list{
+    margin: 8rem;
+   
+  }
+
+  .store-list-top{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px #DBD9CE solid;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .store-list-top h3{
+    font-weight: 300;
+  }
+
+  .store-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px #DBD9CE solid;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .store-item h3{
+    font-weight: 300;
+  }
+
+  
